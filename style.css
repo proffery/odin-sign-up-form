@@ -1,0 +1,66 @@
+:root {
+    --title-font: clamp(24px, 5vw, 10rem);
+    --main-font: clamp(18px, 3vw, 9rem);
+    --first-back-color: rgb(243, 243, 243);
+    --second-back-color: rgb(255, 255, 255);
+    --logo-back-color: rgba(27, 25, 25, 0.5);
+}
+
+body {
+    display: flex;
+    background-image: url("thomas-bennie-lxziZx-TfSo-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: var(--main-font);
+    margin: 0 auto;
+}
+
+.main-logo {
+    display: flex;
+    width: 33%;
+    height: 100vh;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-back-color);
+    font-size: var(--main-font);
+    width: 67%;
+}
+
+.logo {
+    position: relative;
+    top: 20%;
+    display: flex;
+    background-color: var(--logo-back-color);
+    width: 100%;
+    height: calc(var(--title-font) + 5vh); 
+    color: var(--first-back-color);
+    font-size: var(--title-font);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header, .form, .account {
+    min-height: calc(var(--title-font) + 17vh); 
+    padding: 1rem  ;
+
+}
+
+.form {
+    background-color: var(--second-back-color);
+    box-shadow: 0 3px 8px gray;
+}
+ button[type="submit"] {
+    background-color: coral;
+    border-radius: .3rem;
+    border: none;
+    font-size: var(--main-font);
+    height: calc(var(--main-font) + 15px);
+    width: fit-content;
+    color: var(--second-back-color);
+    box-shadow: 0 1px 3px gray;
+ }
