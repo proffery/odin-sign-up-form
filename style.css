@@ -1,6 +1,6 @@
 :root {
-    --title-font: clamp(24px, 5vw, 10rem);
-    --main-font: clamp(18px, 3vw, 9rem);
+    --title-font: clamp(36px, 6vw, 3rem);
+    --main-font: clamp(16px, 2vw, 2rem);
     --first-back-color: rgb(243, 243, 243);
     --second-back-color: rgb(255, 255, 255);
     --logo-back-color: rgba(27, 25, 25, 0.5);
@@ -41,7 +41,6 @@ body {
     font-size: var(--title-font);
     align-items: center;
     justify-content: center;
-
 }
 
 .header, .form, .account {
