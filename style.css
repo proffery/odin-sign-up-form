@@ -1,6 +1,6 @@
 :root {
     --title-font: clamp(36px, 6vw, 3rem);
-    --main-font: clamp(14px, 2vw, 1.5rem);
+    --main-font: clamp(12px, 1.8vw, 1.5rem);
     --first-back-color: rgb(243, 243, 243);
     --second-back-color: rgb(255, 255, 255);
     --logo-back-color: rgba(27, 25, 25, 0.5);
@@ -18,7 +18,7 @@ body {
 
 .main-logo {
     display: flex;
-    width: 33%;
+    width: 35%;
     height: 100vh;
 }
 
@@ -27,12 +27,12 @@ body {
     flex-direction: column;
     background-color: var(--first-back-color);
     font-size: var(--main-font);
-    width: 67%;
+    width: 65%;
 }
 
 .logo {
     position: relative;
-    top: 20%;
+    top: 25%;
     display: flex;
     background-color: var(--logo-back-color);
     width: 100%;
@@ -95,12 +95,11 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: calc(var(--main-font) - 7px);
 }
 
 input {
-    font-size: calc(var(--main-font) - 6px);
-    border-radius: .15rem;
+    font-size: calc(var(--main-font) - 3px);
+    border-radius: 0.15rem;
     border: 1px solid gray;
 }
 
@@ -112,4 +111,8 @@ input:focus {
   
 input[type="password"] {
     border: 1px solid red;
+}
+
+label {
+    font-size: calc(var(--main-font) - 6px);
 }
