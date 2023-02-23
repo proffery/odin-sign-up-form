@@ -13,11 +13,45 @@
     </div>
     <div class="main-form">
         <div class="header">This is not real online service!</div>
-        <div class="form">My form</div>
-        <div class="account">
-            <button type="submit">Create Account</button>
-            <a href="#">Log in</a>
-        </div>
+        <div class="form">Fill this form:
+            <form action="#" method="post">
+                <div class="form-left">
+                    <div>
+                        <label for="user_name">FIRST NAME</label>
+                        <input type="text" name="user_name" id="user_name" minlength="3" maxlength="10"  required>
+                    </div>
+                    <div>
+                        <label for="user_email">EMAIL</label>
+                        <input type="email" name="user_email" id="user_email" required>
+                    </div>
+                    <div>
+                        <label for="user_password">PASSWORD</label>
+                        <input type="password" name="user_password" id="user_password">
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div>
+                        <label for="user_last_name">LAST NAME</label>
+                        <input type="text" name="user_last_name" id="user_last_name" minlength="3" maxlength="10" required>
+                    </div>
+                    <div>
+                        <label for="user_phone">PHONE NUMBER</label>
+                        <input type="text" name="user_phone" id="user_phone" pattern="((25|44|33|29)[1-9][0-9]{6})" title="example: 441234567" placeholder="44 123 45 67" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </div>
+            </div>
+            <div class="account">
+                <button type="submit">Create Account</button>
+                <div>Already have an account?
+                    <a href="#">Log in</a>
+                </div>
+            </div>
+        </form>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

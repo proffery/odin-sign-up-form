@@ -1,6 +1,6 @@
 :root {
     --title-font: clamp(36px, 6vw, 3rem);
-    --main-font: clamp(16px, 2vw, 2rem);
+    --main-font: clamp(14px, 2vw, 1.5rem);
     --first-back-color: rgb(243, 243, 243);
     --second-back-color: rgb(255, 255, 255);
     --logo-back-color: rgba(27, 25, 25, 0.5);
@@ -44,12 +44,14 @@ body {
 }
 
 .header, .form, .account {
-    min-height: calc(var(--title-font) + 17vh); 
-    padding: 1rem  ;
-
+    min-height: calc(var(--title-font) + 10vh); 
+    padding: 1.5rem;
+    font-weight: 600;
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
     background-color: var(--second-back-color);
     box-shadow: 0 3px 8px gray;
 }
@@ -58,8 +60,56 @@ body {
     border-radius: .3rem;
     border: none;
     font-size: var(--main-font);
-    height: calc(var(--main-font) + 15px);
+    height: calc(var(--main-font) + 20px);
     width: fit-content;
     color: var(--second-back-color);
     box-shadow: 0 1px 3px gray;
+    margin: 1rem;
+    margin-left: 0;
+    transition: all .2s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(.9);
+}
+ .account {
+    font-size: calc(var(--main-font) - 5px);
  }
+ 
+ a {
+    text-decoration: none;
+    color: coral;
+ }
+
+.form-left > div, .form-right > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: calc(var(--main-font) - 7px);
+}
+
+input {
+    font-size: calc(var(--main-font) - 6px);
+    border-radius: .15rem;
+    border: 1px solid gray;
+}
+
+input:focus {
+    box-shadow: 0 2px 3px gray;
+    border: 1px solid blue;
+    outline: none;
+}
+  
+input[type="password"] {
+    border: 1px solid red;
+}
