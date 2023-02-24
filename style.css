@@ -24,6 +24,7 @@ body {
 
 .main-logo {
     display: flex;
+    flex-direction: column;
     width: 35%;
     height: 100vh;
 }
@@ -87,6 +88,11 @@ button[type="submit"]:hover {
     color: coral;
  }
 
+ .photo-creator a {
+    text-decoration: none;
+    color: var(--second-back-color);
+ }
+
 .form-left > div, .form-right > div {
     display: flex;
     flex-direction: column;
@@ -129,9 +135,9 @@ label {
 }
 
 .photo-creator {
-    position: absolute;
-    bottom: 2%;
-    left: 6%;
+    position: relative;
+    top: 82%;
+    left:15%;
     font-size: calc(var(--main-font) - 5px);
     color: var(--first-back-color);
 }
