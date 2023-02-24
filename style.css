@@ -1,7 +1,7 @@
 :root {
     --title-font: clamp(36px, 6vw, 3rem);
-    --main-font: clamp(12px, 1.8vw, 1.5rem);
-    --first-back-color: rgb(243, 243, 243);
+    --main-font: clamp(16px, 1.6vw, 1.5rem);
+    --first-back-color: rgb(247, 247, 247);
     --second-back-color: rgb(255, 255, 255);
     --logo-back-color: rgba(27, 25, 25, 0.5);
 }
@@ -14,6 +14,12 @@ body {
     background-size: cover;
     font-size: var(--main-font);
     margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .main-logo {
@@ -32,7 +38,7 @@ body {
 
 .logo {
     position: relative;
-    top: 25%;
+    top: 17%;
     display: flex;
     background-color: var(--logo-back-color);
     width: 100%;
@@ -44,7 +50,7 @@ body {
 }
 
 .header, .form, .account {
-    min-height: calc(var(--title-font) + 10vh); 
+    min-height: calc(var(--title-font) + 14vh); 
     padding: 1.5rem;
     font-weight: 600;
 }
@@ -103,16 +109,29 @@ input {
     border: 1px solid gray;
 }
 
+input[required]:invalid {
+    border: 1px solid red;
+}
+
+input::placeholder {
+    color: rgba(128, 128, 128, 0.418);
+    font-size: calc(var(--main-font) - 6px);
+}
+
 input:focus {
     box-shadow: 0 2px 3px gray;
     border: 1px solid blue;
     outline: none;
 }
-  
-input[type="password"] {
-    border: 1px solid red;
-}
 
 label {
     font-size: calc(var(--main-font) - 6px);
+}
+
+.photo-creator {
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+    font-size: calc(var(--main-font) - 5px);
+    color: var(--first-back-color);
 }
