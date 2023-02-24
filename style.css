@@ -137,7 +137,7 @@ label {
 .photo-creator {
     position: relative;
     top: 82%;
-    left:15%;
+    left:16%;
     font-size: calc(var(--main-font) - 5px);
     color: var(--first-back-color);
 }
